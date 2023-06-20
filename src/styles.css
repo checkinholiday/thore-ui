@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Prompt";
+  src: url("./font/Prompt-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("./font/Prompt-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("./font/Prompt-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("./font/Prompt-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("./font/Prompt-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("./font/Prompt-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Prompt", sans-serif;
+}
+
+.badge {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 4px 10px;
+  background-color: #6A6A6A;
+  color: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.badge.primary {
+  background-color: #4B73FF;
+}
+.badge.secondary {
+  background-color: #C54BFF;
+}
+.badge.success {
+  background-color: #4BC936;
+}
+.badge.warning {
+  background-color: #FF7628;
+}
+.badge.error {
+  background-color: #FF2828;
+}
+.badge.primary-flat {
+  background-color: rgba(75, 115, 255, 0.2);
+  color: #4B73FF;
+}
+.badge.secondary-flat {
+  background-color: rgba(197, 75, 255, 0.2);
+  color: #C54BFF;
+}
+.badge.success-flat {
+  background-color: rgba(75, 201, 54, 0.2);
+  color: #4BC936;
+}
+.badge.warning-flat {
+  background-color: rgba(255, 118, 40, 0.2);
+  color: #FF7628;
+}
+.badge.error-flat {
+  background-color: rgba(255, 40, 40, 0.2);
+  color: #FF2828;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,55 @@
+.badge {
+  user-select: none;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 4px 10px;
+  background-color: #6A6A6A;
+  color: #fff;
+  width: fit-content;
+
+  &.primary {
+    background-color: $primary;
+  }
+
+  &.secondary {
+    background-color: $secondary;
+  }
+
+  &.success {
+    background-color: $success;
+  }
+
+  &.warning {
+    background-color: $warning;
+  }
+
+  &.error {
+    background-color: $error;
+  }
+
+  &.primary-flat {
+    background-color: rgba(75, 115, 255, 0.2);
+    color: $primary;
+  }
+
+  &.secondary-flat {
+    background-color: rgba(197, 75, 255, 0.2);
+    color: $secondary;
+  }
+
+  &.success-flat {
+    background-color: rgba(75, 201, 54, 0.2);
+    color: $success;
+  }
+
+  &.warning-flat {
+    background-color: rgba(255, 118, 40, 0.2);
+    color: $warning;
+  }
+
+  &.error-flat {
+    background-color: rgba(255, 40, 40, 0.2);
+    color: $error;
+  }
+}
