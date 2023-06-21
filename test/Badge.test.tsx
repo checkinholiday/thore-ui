@@ -1,11 +1,11 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Default as Thing } from '../stories/Thing.stories';
+import { Badge } from '../src/components/Badge/Badge';
 
-describe('Thing', () => {
+describe('Badge', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<Thing />, div);
+    ReactDOM.render(<Badge text="Badge" type="primary" />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 });
