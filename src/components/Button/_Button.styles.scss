@@ -268,3 +268,125 @@
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
   }
 }
+
+.outlined-button {
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 400;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+  user-select: none;
+  display: flex;
+  align-items: center;
+
+  img,
+  svg {
+    margin-right: 5px;
+  }
+
+  svg {
+    margin-left: -3px;
+
+    path {
+      transition: all 0.3s ease;
+    }
+  }
+
+  &.primary {
+    color: $primary;
+    border: 1px solid $primary;
+
+    svg {
+      path {
+        fill: $primary;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(75, 115, 255, 0.2);
+    }
+
+    &:active {
+      background-color: rgba(75, 115, 255, 0.3);
+    }
+  }
+
+  &.secondary {
+    color: $secondary;
+    border: 1px solid $secondary;
+
+    svg {
+      path {
+        fill: $secondary;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(197, 75, 255, 0.2);
+    }
+
+    &:active {
+      background-color: rgba(197, 75, 255, 0.3);
+    }
+  }
+
+  &.success {
+    color: $success;
+    border: 1px solid $success;
+
+    svg {
+      path {
+        fill: $success;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(75, 201, 54, 0.2);
+    }
+
+    &:active {
+      background-color: rgba(75, 201, 54, 0.3);
+    }
+  }
+
+  &.warning {
+    color: $warning;
+    border: 1px solid $warning;
+
+    svg {
+      path {
+        fill: $warning;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(255, 118, 40, 0.2);
+    }
+
+    &:active {
+      background-color: rgba(255, 118, 40, 0.3);
+    }
+  }
+
+  &.error {
+    color: $error;
+    border: 1px solid $error;
+
+    svg {
+      path {
+        fill: $error;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(255, 40, 40, 0.2);
+    }
+
+    &:active {
+      background-color: rgba(255, 40, 40, 0.3);
+    }
+  }
+}

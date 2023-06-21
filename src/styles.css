@@ -290,4 +290,95 @@
 }
 .elevated-button:hover {
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+}
+
+.outlined-button {
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 400;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  align-items: center;
+}
+.outlined-button img,
+.outlined-button svg {
+  margin-right: 5px;
+}
+.outlined-button svg {
+  margin-left: -3px;
+}
+.outlined-button svg path {
+  transition: all 0.3s ease;
+}
+.outlined-button.primary {
+  color: #4B73FF;
+  border: 1px solid #4B73FF;
+}
+.outlined-button.primary svg path {
+  fill: #4B73FF;
+}
+.outlined-button.primary:hover {
+  background-color: rgba(75, 115, 255, 0.2);
+}
+.outlined-button.primary:active {
+  background-color: rgba(75, 115, 255, 0.3);
+}
+.outlined-button.secondary {
+  color: #C54BFF;
+  border: 1px solid #C54BFF;
+}
+.outlined-button.secondary svg path {
+  fill: #C54BFF;
+}
+.outlined-button.secondary:hover {
+  background-color: rgba(197, 75, 255, 0.2);
+}
+.outlined-button.secondary:active {
+  background-color: rgba(197, 75, 255, 0.3);
+}
+.outlined-button.success {
+  color: #4BC936;
+  border: 1px solid #4BC936;
+}
+.outlined-button.success svg path {
+  fill: #4BC936;
+}
+.outlined-button.success:hover {
+  background-color: rgba(75, 201, 54, 0.2);
+}
+.outlined-button.success:active {
+  background-color: rgba(75, 201, 54, 0.3);
+}
+.outlined-button.warning {
+  color: #FF7628;
+  border: 1px solid #FF7628;
+}
+.outlined-button.warning svg path {
+  fill: #FF7628;
+}
+.outlined-button.warning:hover {
+  background-color: rgba(255, 118, 40, 0.2);
+}
+.outlined-button.warning:active {
+  background-color: rgba(255, 118, 40, 0.3);
+}
+.outlined-button.error {
+  color: #FF2828;
+  border: 1px solid #FF2828;
+}
+.outlined-button.error svg path {
+  fill: #FF2828;
+}
+.outlined-button.error:hover {
+  background-color: rgba(255, 40, 40, 0.2);
+}
+.outlined-button.error:active {
+  background-color: rgba(255, 40, 40, 0.3);
 }/*# sourceMappingURL=styles.css.map */
