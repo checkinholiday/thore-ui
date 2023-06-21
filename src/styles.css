@@ -41,6 +41,7 @@
   cursor: pointer;
   color: #4B73FF;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 .link:hover {
   color: #2D5AF6;
@@ -96,4 +97,197 @@
 .badge.error-flat {
   background-color: rgba(255, 40, 40, 0.2);
   color: #FF2828;
+}
+
+.button {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 400;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  align-items: center;
+}
+.button img,
+.button svg {
+  margin-right: 5px;
+}
+.button svg {
+  margin-left: -3px;
+}
+.button svg path {
+  fill: #fff;
+}
+.button.primary {
+  background-color: #4B73FF;
+}
+.button.primary:hover {
+  background-color: #2D5AF6;
+}
+.button.primary:active {
+  background-color: #2652EB;
+}
+.button.secondary {
+  background-color: #C54BFF;
+}
+.button.secondary:hover {
+  background-color: #AD32E8;
+}
+.button.secondary:active {
+  background-color: #A228DD;
+}
+.button.success {
+  background-color: #4BC936;
+}
+.button.success:hover {
+  background-color: #40B62C;
+}
+.button.success:active {
+  background-color: #36A823;
+}
+.button.warning {
+  background-color: #FF7628;
+}
+.button.warning:hover {
+  background-color: #EE691E;
+}
+.button.warning:active {
+  background-color: #E7641B;
+}
+.button.error {
+  background-color: #FF2828;
+}
+.button.error:hover {
+  background-color: #DA1212;
+}
+.button.error:active {
+  background-color: #D21212;
+}
+
+.elevated-button {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  align-items: center;
+  background-color: #F9F9F9;
+}
+.elevated-button img,
+.elevated-button svg {
+  margin-right: 5px;
+}
+.elevated-button svg {
+  margin-left: -3px;
+}
+.elevated-button svg path {
+  transition: all 0.3s ease;
+}
+.elevated-button.primary {
+  color: #4B73FF;
+}
+.elevated-button.primary svg path {
+  fill: #4B73FF;
+}
+.elevated-button.primary:hover {
+  color: #2D5AF6;
+}
+.elevated-button.primary:hover svg path {
+  fill: #2D5AF6;
+}
+.elevated-button.primary:active {
+  color: #2652EB;
+}
+.elevated-button.primary:active svg path {
+  fill: #2652EB;
+}
+.elevated-button.secondary {
+  color: #C54BFF;
+}
+.elevated-button.secondary svg path {
+  fill: #C54BFF;
+}
+.elevated-button.secondary:hover {
+  color: #AD32E8;
+}
+.elevated-button.secondary:hover svg path {
+  fill: #AD32E8;
+}
+.elevated-button.secondary:active {
+  color: #A228DD;
+}
+.elevated-button.secondary:active svg path {
+  fill: #A228DD;
+}
+.elevated-button.success {
+  color: #4BC936;
+}
+.elevated-button.success svg path {
+  fill: #4BC936;
+}
+.elevated-button.success:hover {
+  color: #40B62C;
+}
+.elevated-button.success:hover svg path {
+  fill: #40B62C;
+}
+.elevated-button.success:active {
+  color: #36A823;
+}
+.elevated-button.success:active svg path {
+  fill: #36A823;
+}
+.elevated-button.warning {
+  color: #FF7628;
+}
+.elevated-button.warning svg path {
+  fill: #FF7628;
+}
+.elevated-button.warning:hover {
+  color: #EE691E;
+}
+.elevated-button.warning:hover svg path {
+  fill: #EE691E;
+}
+.elevated-button.warning:active {
+  color: #E7641B;
+}
+.elevated-button.warning:active svg path {
+  fill: #E7641B;
+}
+.elevated-button.error {
+  color: #FF2828;
+}
+.elevated-button.error svg path {
+  fill: #FF2828;
+}
+.elevated-button.error:hover {
+  color: #DA1212;
+}
+.elevated-button.error:hover svg path {
+  fill: #DA1212;
+}
+.elevated-button.error:active {
+  color: #D21212;
+}
+.elevated-button.error:active svg path {
+  fill: #D21212;
+}
+.elevated-button:hover {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=styles.css.map */

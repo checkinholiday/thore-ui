@@ -1,0 +1,270 @@
+.button {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 400;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+  user-select: none;
+  display: flex;
+  align-items: center;
+
+  img,
+  svg {
+    margin-right: 5px;
+  }
+
+  svg {
+    margin-left: -3px;
+
+    path {
+      fill: #fff;
+    }
+  }
+
+  &.primary {
+    background-color: $primary;
+
+    &:hover {
+      background-color: $primaryHover;
+    }
+
+    &:active {
+      background-color: $primaryActive;
+    }
+  }
+
+  &.secondary {
+    background-color: $secondary;
+
+    &:hover {
+      background-color: $secondaryHover;
+    }
+
+    &:active {
+      background-color: $secondaryActive;
+    }
+  }
+
+  &.success {
+    background-color: $success;
+
+    &:hover {
+      background-color: $successHover;
+    }
+
+    &:active {
+      background-color: $successActive;
+    }
+  }
+
+  &.warning {
+    background-color: $warning;
+
+    &:hover {
+      background-color: $warningHover;
+    }
+
+    &:active {
+      background-color: $warningActive;
+    }
+  }
+
+  &.error {
+    background-color: $error;
+
+    &:hover {
+      background-color: $errorHover;
+    }
+
+    &:active {
+      background-color: $errorActive;
+    }
+  }
+}
+
+.elevated-button {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  background-color: #F9F9F9;
+
+  img,
+  svg {
+    margin-right: 5px;
+  }
+
+  svg {
+    margin-left: -3px;
+
+    path {
+      transition: all 0.3s ease;
+    }
+  }
+
+  &.primary {
+    color: $primary;
+
+    svg {
+      path {
+        fill: $primary;
+      }
+    }
+
+    &:hover {
+      color: $primaryHover;
+
+      svg {
+        path {
+          fill: $primaryHover;
+        }
+      }
+    }
+
+    &:active {
+      color: $primaryActive;
+
+      svg {
+        path {
+          fill: $primaryActive;
+        }
+      }
+    }
+  }
+
+  &.secondary {
+    color: $secondary;
+
+    svg {
+      path {
+        fill: $secondary;
+      }
+    }
+
+    &:hover {
+      color: $secondaryHover;
+
+      svg {
+        path {
+          fill: $secondaryHover;
+        }
+      }
+    }
+
+    &:active {
+      color: $secondaryActive;
+
+      svg {
+        path {
+          fill: $secondaryActive;
+        }
+      }
+    }
+  }
+
+  &.success {
+    color: $success;
+
+    svg {
+      path {
+        fill: $success;
+      }
+    }
+
+    &:hover {
+      color: $successHover;
+
+      svg {
+        path {
+          fill: $successHover;
+        }
+      }
+    }
+
+    &:active {
+      color: $successActive;
+
+      svg {
+        path {
+          fill: $successActive;
+        }
+      }
+    }
+  }
+
+  &.warning {
+    color: $warning;
+
+    svg {
+      path {
+        fill: $warning;
+      }
+    }
+
+    &:hover {
+      color: $warningHover;
+
+      svg {
+        path {
+          fill: $warningHover;
+        }
+      }
+    }
+
+    &:active {
+      color: $warningActive;
+
+      svg {
+        path {
+          fill: $warningActive;
+        }
+      }
+    }
+  }
+
+  &.error {
+    color: $error;
+
+    svg {
+      path {
+        fill: $error;
+      }
+    }
+
+    &:hover {
+      color: $errorHover;
+
+      svg {
+        path {
+          fill: $errorHover;
+        }
+      }
+    }
+
+    &:active {
+      color: $errorActive;
+
+      svg {
+        path {
+          fill: $errorActive;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+  }
+}
