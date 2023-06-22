@@ -3,10 +3,10 @@ import React from 'react';
 export interface ButtonProps {
   children: any;
   type: 'primary' | 'secondary' | 'success' | 'warning' | 'error';
-  disabled: boolean;
+  disabled?: boolean;
 }
 
-export function Button({ children, type, disabled }: ButtonProps) {
+export function Button({ children, type, disabled = false }: ButtonProps) {
   return (
     <button className={`button ${type} ${disabled ? 'disabled' : ''}`}>
       {children}
@@ -14,7 +14,7 @@ export function Button({ children, type, disabled }: ButtonProps) {
   );
 }
 
-export function ElevatedButton({ children, type, disabled }: ButtonProps) {
+export function ElevatedButton({ children, type, disabled = false }: ButtonProps) {
   return (
     <button className={`elevated-button ${type} ${disabled ? 'disabled' : ''}`}>
       {children}
@@ -22,7 +22,7 @@ export function ElevatedButton({ children, type, disabled }: ButtonProps) {
   );
 }
 
-export function OutlinedButton({ children, type, disabled }: ButtonProps) {
+export function OutlinedButton({ children, type, disabled = false }: ButtonProps) {
   return (
     <button className={`outlined-button ${type} ${disabled ? 'disabled' : ''}`}>
       {children}
@@ -30,7 +30,7 @@ export function OutlinedButton({ children, type, disabled }: ButtonProps) {
   );
 }
 
-export function RoundedButton({ children, type, disabled }: ButtonProps) {
+export function RoundedButton({ children, type, disabled = false }: ButtonProps) {
   return (
     <button className={`rounded-button ${type} ${disabled ? 'disabled' : ''}`}>
       {children}
@@ -38,7 +38,7 @@ export function RoundedButton({ children, type, disabled }: ButtonProps) {
   );
 }
 
-export function FlatButton({ children, type, disabled }: ButtonProps) {
+export function FlatButton({ children, type, disabled = false }: ButtonProps) {
   return (
     <button className={`flat-button ${type} ${disabled ? 'disabled' : ''}`}>
       {children}
@@ -46,26 +46,10 @@ export function FlatButton({ children, type, disabled }: ButtonProps) {
   );
 }
 
-export function LightButton({ children, type, disabled }: ButtonProps) {
+export function LightButton({ children, type, disabled = false }: ButtonProps) {
   return (
     <button className={`light-button ${type} ${disabled ? 'disabled' : ''}`}>
       {children}
     </button>
   );
 }
-
-// export function ButtonRow({ text, type }: ButtonProps) {
-//   return (
-//     <div className={`badge ${type}`}>
-//       {text}
-//     </div>
-//   );
-// }
-
-// export function OutlinedButtonRow({ text, type }: ButtonProps) {
-//   return (
-//     <div className={`badge ${type}`}>
-//       {text}
-//     </div>
-//   );
-// }

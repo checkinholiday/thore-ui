@@ -1,0 +1,188 @@
+.button-row {
+  display: flex;
+  align-items: center;
+
+  .button-row-child {
+    &:first-child {
+      border-radius: 18px 0 0 18px;
+    }
+
+    &:last-child {
+      border-radius: 0 18px 18px 0;
+    }
+  }
+}
+
+.outlined-button-row {
+  display: flex;
+  align-items: center;
+  border-radius: 18px;
+  border: 1px solid #000;
+  width: fit-content;
+
+  .button-row-child {
+    background-color: #fff;
+
+    svg {
+      path {
+        fill: #000;
+      }
+    }
+
+    &.primary,
+    &.secondary,
+    &.success,
+    &.warning,
+    &.error {
+      background-color: #fff;
+      color: #000;
+      border-right: 1px solid #000;
+    }
+
+    &.primary {
+      &:hover {
+        background-color: rgba(75, 115, 255, 0.2);
+      }
+
+      &:active {
+        background-color: rgba(75, 115, 255, 0.3);
+      }
+    }
+
+    &.secondary {
+      &:hover {
+        background-color: rgba(197, 75, 255, 0.2);
+      }
+
+      &:active {
+        background-color: rgba(197, 75, 255, 0.3);
+      }
+    }
+
+    &.success {
+      &:hover {
+        background-color: rgba(75, 201, 54, 0.2);
+      }
+
+      &:active {
+        background-color: rgba(75, 201, 54, 0.3);
+      }
+    }
+
+    &.warning {
+      &:hover {
+        background-color: rgba(255, 118, 40, 0.2);
+      }
+
+      &:active {
+        background-color: rgba(255, 118, 40, 0.3);
+      }
+    }
+
+    &.error {
+      &:hover {
+        background-color: rgba(255, 40, 40, 0.2);
+      }
+
+      &:active {
+        background-color: rgba(255, 40, 40, 0.3);
+      }
+    }
+
+    &:first-child {
+      border-radius: 18px 0 0 18px;
+    }
+
+    &:last-child {
+      border-radius: 0 18px 18px 0;
+
+      &.primary,
+      &.secondary,
+      &.success,
+      &.warning,
+      &.error {
+        border-right: none;
+      }
+    }
+  }
+}
+
+.button-row-child {
+  background-color: #6A6A6A;
+  color: #fff;
+  padding: 10px 20px;
+  user-select: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 5px;
+    margin-left: -3px;
+
+    path {
+      fill: #fff;
+    }
+  }
+
+  &.primary {
+    background-color: $primary;
+
+    &:hover {
+      background-color: $primaryHover;
+    }
+
+    &:active {
+      background-color: $primaryActive;
+    }
+  }
+
+  &.secondary {
+    background-color: $secondary;
+
+    &:hover {
+      background-color: $secondaryHover;
+    }
+
+    &:active {
+      background-color: $secondaryActive;
+    }
+  }
+
+  &.success {
+    background-color: $success;
+
+    &:hover {
+      background-color: $successHover;
+    }
+
+    &:active {
+      background-color: $successActive;
+    }
+  }
+
+  &.warning {
+    background-color: $warning;
+
+    &:hover {
+      background-color: $warningHover;
+    }
+
+    &:active {
+      background-color: $warningActive;
+    }
+  }
+
+  &.error {
+    background-color: $error;
+
+    &:hover {
+      background-color: $errorHover;
+    }
+
+    &:active {
+      background-color: $errorActive;
+    }
+  }
+}
