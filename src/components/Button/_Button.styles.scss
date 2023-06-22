@@ -526,3 +526,137 @@
     }
   }
 }
+
+.flat-button {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+  user-select: none;
+  display: flex;
+  align-items: center;
+
+  img,
+  svg {
+    margin-right: 5px;
+  }
+
+  svg {
+    margin-left: -3px;
+
+    path {
+      fill: #fff;
+    }
+  }
+
+  &.primary {
+    background-color: rgba(75, 115, 255, 0.2);
+    color: $primary;
+
+    svg {
+      path {
+        fill: $primary;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(75, 115, 255, 0.3);
+    }
+
+    &:active {
+      background-color: rgba(75, 115, 255, 0.35);
+    }
+  }
+
+  &.secondary {
+    background-color: rgba(197, 75, 255, 0.2);
+    color: $secondary;
+
+    svg {
+      path {
+        fill: $secondary;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(197, 75, 255, 0.3);
+    }
+
+    &:active {
+      background-color: rgba(197, 75, 255, 0.35);
+    }
+  }
+
+  &.success {
+    background-color: rgba(75, 201, 54, 0.2);
+    color: $success;
+
+    svg {
+      path {
+        fill: $success;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(75, 201, 54, 0.3);
+    }
+
+    &:active {
+      background-color: rgba(75, 201, 54, 0.35);
+    }
+  }
+
+  &.warning {
+    background-color: rgba(255, 118, 40, 0.2);
+    color: $warning;
+
+    svg {
+      path {
+        fill: $warning;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(255, 118, 40, 0.3);
+    }
+
+    &:active {
+      background-color: rgba(255, 118, 40, 0.35);
+    }
+  }
+
+  &.error {
+    background-color: rgba(255, 40, 40, 0.2);
+    color: $error;
+
+    svg {
+      path {
+        fill: $error;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(255, 40, 40, 0.3);
+    }
+
+    &:active {
+      background-color: rgba(255, 40, 40, 0.35);
+    }
+  }
+
+  &.disabled {
+    background-color: #D9D9D9;
+    color: #8D8D8D;
+    pointer-events: none;
+
+    svg {
+      path {
+        fill: #8D8D8D;
+      }
+    }
+  }
+}

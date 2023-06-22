@@ -485,4 +485,103 @@
 }
 .rounded-button.disabled svg path {
   fill: #8D8D8D;
+}
+
+.flat-button {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  align-items: center;
+}
+.flat-button img,
+.flat-button svg {
+  margin-right: 5px;
+}
+.flat-button svg {
+  margin-left: -3px;
+}
+.flat-button svg path {
+  fill: #fff;
+}
+.flat-button.primary {
+  background-color: rgba(75, 115, 255, 0.2);
+  color: #4B73FF;
+}
+.flat-button.primary svg path {
+  fill: #4B73FF;
+}
+.flat-button.primary:hover {
+  background-color: rgba(75, 115, 255, 0.3);
+}
+.flat-button.primary:active {
+  background-color: rgba(75, 115, 255, 0.35);
+}
+.flat-button.secondary {
+  background-color: rgba(197, 75, 255, 0.2);
+  color: #C54BFF;
+}
+.flat-button.secondary svg path {
+  fill: #C54BFF;
+}
+.flat-button.secondary:hover {
+  background-color: rgba(197, 75, 255, 0.3);
+}
+.flat-button.secondary:active {
+  background-color: rgba(197, 75, 255, 0.35);
+}
+.flat-button.success {
+  background-color: rgba(75, 201, 54, 0.2);
+  color: #4BC936;
+}
+.flat-button.success svg path {
+  fill: #4BC936;
+}
+.flat-button.success:hover {
+  background-color: rgba(75, 201, 54, 0.3);
+}
+.flat-button.success:active {
+  background-color: rgba(75, 201, 54, 0.35);
+}
+.flat-button.warning {
+  background-color: rgba(255, 118, 40, 0.2);
+  color: #FF7628;
+}
+.flat-button.warning svg path {
+  fill: #FF7628;
+}
+.flat-button.warning:hover {
+  background-color: rgba(255, 118, 40, 0.3);
+}
+.flat-button.warning:active {
+  background-color: rgba(255, 118, 40, 0.35);
+}
+.flat-button.error {
+  background-color: rgba(255, 40, 40, 0.2);
+  color: #FF2828;
+}
+.flat-button.error svg path {
+  fill: #FF2828;
+}
+.flat-button.error:hover {
+  background-color: rgba(255, 40, 40, 0.3);
+}
+.flat-button.error:active {
+  background-color: rgba(255, 40, 40, 0.35);
+}
+.flat-button.disabled {
+  background-color: #D9D9D9;
+  color: #8D8D8D;
+  pointer-events: none;
+}
+.flat-button.disabled svg path {
+  fill: #8D8D8D;
 }/*# sourceMappingURL=styles.css.map */
