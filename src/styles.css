@@ -170,6 +170,14 @@
 .button.error:active {
   background-color: #D21212;
 }
+.button.disabled {
+  background-color: #D9D9D9;
+  color: #8D8D8D;
+  pointer-events: none;
+}
+.button.disabled svg path {
+  fill: #8D8D8D;
+}
 
 .elevated-button {
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
@@ -291,6 +299,14 @@
 .elevated-button:hover {
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
 }
+.elevated-button.disabled {
+  background-color: #D9D9D9;
+  color: #8D8D8D;
+  pointer-events: none;
+}
+.elevated-button.disabled svg path {
+  fill: #8D8D8D;
+}
 
 .outlined-button {
   outline: none;
@@ -381,4 +397,92 @@
 }
 .outlined-button.error:active {
   background-color: rgba(255, 40, 40, 0.3);
+}
+.outlined-button.disabled {
+  background-color: #D9D9D9;
+  color: #8D8D8D;
+  pointer-events: none;
+}
+.outlined-button.disabled svg path {
+  fill: #8D8D8D;
+}
+
+.rounded-button {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 400;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  align-items: center;
+}
+.rounded-button img,
+.rounded-button svg {
+  margin-right: 5px;
+}
+.rounded-button svg {
+  margin-left: -3px;
+}
+.rounded-button svg path {
+  fill: #fff;
+}
+.rounded-button.primary {
+  background-color: #4B73FF;
+}
+.rounded-button.primary:hover {
+  background-color: #2D5AF6;
+}
+.rounded-button.primary:active {
+  background-color: #2652EB;
+}
+.rounded-button.secondary {
+  background-color: #C54BFF;
+}
+.rounded-button.secondary:hover {
+  background-color: #AD32E8;
+}
+.rounded-button.secondary:active {
+  background-color: #A228DD;
+}
+.rounded-button.success {
+  background-color: #4BC936;
+}
+.rounded-button.success:hover {
+  background-color: #40B62C;
+}
+.rounded-button.success:active {
+  background-color: #36A823;
+}
+.rounded-button.warning {
+  background-color: #FF7628;
+}
+.rounded-button.warning:hover {
+  background-color: #EE691E;
+}
+.rounded-button.warning:active {
+  background-color: #E7641B;
+}
+.rounded-button.error {
+  background-color: #FF2828;
+}
+.rounded-button.error:hover {
+  background-color: #DA1212;
+}
+.rounded-button.error:active {
+  background-color: #D21212;
+}
+.rounded-button.disabled {
+  background-color: #D9D9D9;
+  color: #8D8D8D;
+  pointer-events: none;
+}
+.rounded-button.disabled svg path {
+  fill: #8D8D8D;
 }/*# sourceMappingURL=styles.css.map */

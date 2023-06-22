@@ -84,6 +84,18 @@
       background-color: $errorActive;
     }
   }
+
+  &.disabled {
+    background-color: #D9D9D9;
+    color: #8D8D8D;
+    pointer-events: none;
+
+    svg {
+      path {
+        fill: #8D8D8D;
+      }
+    }
+  }
 }
 
 .elevated-button {
@@ -267,6 +279,18 @@
   &:hover {
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
   }
+
+  &.disabled {
+    background-color: #D9D9D9;
+    color: #8D8D8D;
+    pointer-events: none;
+
+    svg {
+      path {
+        fill: #8D8D8D;
+      }
+    }
+  }
 }
 
 .outlined-button {
@@ -387,6 +411,118 @@
 
     &:active {
       background-color: rgba(255, 40, 40, 0.3);
+    }
+  }
+
+  &.disabled {
+    background-color: #D9D9D9;
+    color: #8D8D8D;
+    pointer-events: none;
+
+    svg {
+      path {
+        fill: #8D8D8D;
+      }
+    }
+  }
+}
+
+.rounded-button {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 400;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  user-select: none;
+  display: flex;
+  align-items: center;
+
+  img,
+  svg {
+    margin-right: 5px;
+  }
+
+  svg {
+    margin-left: -3px;
+
+    path {
+      fill: #fff;
+    }
+  }
+
+  &.primary {
+    background-color: $primary;
+
+    &:hover {
+      background-color: $primaryHover;
+    }
+
+    &:active {
+      background-color: $primaryActive;
+    }
+  }
+
+  &.secondary {
+    background-color: $secondary;
+
+    &:hover {
+      background-color: $secondaryHover;
+    }
+
+    &:active {
+      background-color: $secondaryActive;
+    }
+  }
+
+  &.success {
+    background-color: $success;
+
+    &:hover {
+      background-color: $successHover;
+    }
+
+    &:active {
+      background-color: $successActive;
+    }
+  }
+
+  &.warning {
+    background-color: $warning;
+
+    &:hover {
+      background-color: $warningHover;
+    }
+
+    &:active {
+      background-color: $warningActive;
+    }
+  }
+
+  &.error {
+    background-color: $error;
+
+    &:hover {
+      background-color: $errorHover;
+    }
+
+    &:active {
+      background-color: $errorActive;
+    }
+  }
+
+  &.disabled {
+    background-color: #D9D9D9;
+    color: #8D8D8D;
+    pointer-events: none;
+
+    svg {
+      path {
+        fill: #8D8D8D;
+      }
     }
   }
 }

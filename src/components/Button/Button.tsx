@@ -3,51 +3,52 @@ import React from 'react';
 export interface ButtonProps {
   children: any;
   type: 'primary' | 'secondary' | 'success' | 'warning' | 'error';
+  disabled: boolean;
 }
 
-export function Button({ children, type }: ButtonProps) {
+export function Button({ children, type, disabled }: ButtonProps) {
   return (
-    <button className={`button ${type}`}>
+    <button className={`button ${type} ${disabled ? 'disabled' : ''}`}>
       {children}
     </button>
   );
 }
 
-export function ElevatedButton({ children, type }: ButtonProps) {
+export function ElevatedButton({ children, type, disabled }: ButtonProps) {
   return (
-    <button className={`elevated-button ${type}`}>
+    <button className={`elevated-button ${type} ${disabled ? 'disabled' : ''}`}>
       {children}
     </button>
   );
 }
 
-export function OutlinedButton({ children, type }: ButtonProps) {
+export function OutlinedButton({ children, type, disabled }: ButtonProps) {
   return (
-    <button className={`outlined-button ${type}`}>
+    <button className={`outlined-button ${type} ${disabled ? 'disabled' : ''}`}>
       {children}
     </button>
   );
 }
 
-export function RoundedButton({ children, type }: ButtonProps) {
+export function RoundedButton({ children, type, disabled }: ButtonProps) {
   return (
-    <button className={`rounded-button ${type}`}>
+    <button className={`rounded-button ${type} ${disabled ? 'disabled' : ''}`}>
       {children}
     </button>
   );
 }
 
-export function FlatButton({ children, type }: ButtonProps) {
+export function FlatButton({ children, type, disabled }: ButtonProps) {
   return (
-    <button className={`flat-button ${type}`}>
+    <button className={`flat-button ${type} ${disabled ? 'disabled' : ''}`}>
       {children}
     </button>
   );
 }
 
-export function LightButton({ children, type }: ButtonProps) {
+export function LightButton({ children, type, disabled }: ButtonProps) {
   return (
-    <button className={`light-button ${type}`}>
+    <button className={`light-button ${type} ${disabled ? 'disabled' : ''}`}>
       {children}
     </button>
   );
