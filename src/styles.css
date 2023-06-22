@@ -584,4 +584,103 @@
 }
 .flat-button.disabled svg path {
   fill: #8D8D8D;
+}
+
+.light-button {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  align-items: center;
+}
+.light-button img,
+.light-button svg {
+  margin-right: 5px;
+}
+.light-button svg {
+  margin-left: -3px;
+}
+.light-button svg path {
+  fill: #fff;
+}
+.light-button.primary {
+  background-color: transparent;
+  color: #4B73FF;
+}
+.light-button.primary svg path {
+  fill: #4B73FF;
+}
+.light-button.primary:hover {
+  background-color: rgba(75, 115, 255, 0.2);
+}
+.light-button.primary:active {
+  background-color: rgba(75, 115, 255, 0.3);
+}
+.light-button.secondary {
+  background-color: transparent;
+  color: #C54BFF;
+}
+.light-button.secondary svg path {
+  fill: #C54BFF;
+}
+.light-button.secondary:hover {
+  background-color: rgba(197, 75, 255, 0.2);
+}
+.light-button.secondary:active {
+  background-color: rgba(197, 75, 255, 0.3);
+}
+.light-button.success {
+  background-color: transparent;
+  color: #4BC936;
+}
+.light-button.success svg path {
+  fill: #4BC936;
+}
+.light-button.success:hover {
+  background-color: rgba(75, 201, 54, 0.2);
+}
+.light-button.success:active {
+  background-color: rgba(75, 201, 54, 0.3);
+}
+.light-button.warning {
+  background-color: transparent;
+  color: #FF7628;
+}
+.light-button.warning svg path {
+  fill: #FF7628;
+}
+.light-button.warning:hover {
+  background-color: rgba(255, 118, 40, 0.2);
+}
+.light-button.warning:active {
+  background-color: rgba(255, 118, 40, 0.3);
+}
+.light-button.error {
+  background-color: transparent;
+  color: #FF2828;
+}
+.light-button.error svg path {
+  fill: #FF2828;
+}
+.light-button.error:hover {
+  background-color: rgba(255, 40, 40, 0.2);
+}
+.light-button.error:active {
+  background-color: rgba(255, 40, 40, 0.3);
+}
+.light-button.disabled {
+  background-color: transparent;
+  color: #8D8D8D;
+  pointer-events: none;
+}
+.light-button.disabled svg path {
+  fill: #8D8D8D;
 }/*# sourceMappingURL=styles.css.map */
