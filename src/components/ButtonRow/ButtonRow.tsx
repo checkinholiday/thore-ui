@@ -2,6 +2,7 @@ import React from 'react';
 
 export interface ButtonRowProps {
   children: any;
+  dark?: boolean;
 }
 
 export interface ButtonRowChildProps {
@@ -18,9 +19,9 @@ export function ButtonRow({ children }: ButtonRowProps) {
   );
 }
 
-export function OutlinedButtonRow({ children }: ButtonRowProps) {
+export function OutlinedButtonRow({ children, dark = false }: ButtonRowProps) {
   return (
-    <div className="outlined-button-row">
+    <div className={`outlined-button-row ${dark ? 'dark' : ''}`}>
       {children}
     </div>
   );

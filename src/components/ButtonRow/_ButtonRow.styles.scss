@@ -105,6 +105,30 @@
       }
     }
   }
+
+  &.dark {
+    border: 1px solid #fff;
+
+    .button-row-child {
+      background-color: #232323;
+  
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+  
+      &.primary,
+      &.secondary,
+      &.success,
+      &.warning,
+      &.error {
+        background-color: #232323;
+        color: #fff;
+        border-right: 1px solid #fff;
+      }
+    }
+  }
 }
 
 .button-row-child {
