@@ -6,11 +6,12 @@ export interface AvatarProps {
   text?: string | null;
   color?: "default" | "primary" | "secondary" | "success" | "warning" | "error";
   rounded?: boolean;
+  dark?: boolean;
 }
 
-export function Avatar({ size, src = null, text = null, color = "default", rounded = false }: AvatarProps) {
+export function Avatar({ size, src = null, text = null, color = "default", rounded = false, dark = false }: AvatarProps) {
   return (
-    <div className={`avatar ${size} ${color} ${rounded ? 'rounded' : ''}`}>
+    <div className={`avatar ${size} ${color} ${rounded ? 'rounded' : ''} ${dark ? 'dark' : ''}`}>
       {src !== null && (
         <img src={src} alt="Avatar" />
       )}
