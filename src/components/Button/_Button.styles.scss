@@ -96,6 +96,20 @@
       }
     }
   }
+
+  &.dark {
+    &.disabled {
+      background-color: #2E2E2E;
+      color: #646464;
+      pointer-events: none;
+  
+      svg {
+        path {
+          fill: #646464;
+        }
+      }
+    }
+  }
 }
 
 .elevated-button {
@@ -291,6 +305,22 @@
       }
     }
   }
+
+  &.dark {
+    background-color: #1E1E1E;
+
+    &.disabled {
+      background-color: #2E2E2E;
+      color: #646464;
+      pointer-events: none;
+  
+      svg {
+        path {
+          fill: #646464;
+        }
+      }
+    }
+  }
 }
 
 .outlined-button {
@@ -425,6 +455,22 @@
       }
     }
   }
+
+  &.dark {
+    background: #fff;
+
+    &.disabled {
+      background-color: #2E2E2E;
+      color: #646464;
+      pointer-events: none;
+  
+      svg {
+        path {
+          fill: #646464;
+        }
+      }
+    }
+  }
 }
 
 .rounded-button {
@@ -522,6 +568,20 @@
     svg {
       path {
         fill: #8D8D8D;
+      }
+    }
+  }
+
+  &.dark {
+    &.disabled {
+      background-color: #2E2E2E;
+      color: #646464;
+      pointer-events: none;
+  
+      svg {
+        path {
+          fill: #646464;
+        }
       }
     }
   }
@@ -659,6 +719,20 @@
       }
     }
   }
+
+  &.dark {
+    &.disabled {
+      background-color: #2E2E2E;
+      color: #646464;
+      pointer-events: none;
+  
+      svg {
+        path {
+          fill: #646464;
+        }
+      }
+    }
+  }
 }
 
 .light-button {
@@ -790,6 +864,20 @@
     svg {
       path {
         fill: #8D8D8D;
+      }
+    }
+  }
+
+  &.dark {
+    &.disabled {
+      background-color: #2E2E2E;
+      color: #646464;
+      pointer-events: none;
+  
+      svg {
+        path {
+          fill: #646464;
+        }
       }
     }
   }
