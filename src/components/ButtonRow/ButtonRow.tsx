@@ -34,4 +34,3 @@ export function ButtonRowChild({ children, type, disabled = true }: ButtonRowChi
     </div>
   );
 }
-
