@@ -27,7 +27,7 @@ export function OutlinedButtonRow({ children, dark = false }: ButtonRowProps) {
   );
 }
 
-export function ButtonRowChild({ children, type, disabled = true }: ButtonRowChildProps) {
+export function ButtonRowChild({ children, type, disabled = false }: ButtonRowChildProps) {
   return (
     <div className={`button-row-child ${type} ${disabled ? 'disabled' : ''}`}>
       {children}
