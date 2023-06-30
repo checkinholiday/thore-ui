@@ -971,4 +971,112 @@
 .avatar.dark {
   background-color: #393939;
   color: #fff;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+.input-container label.input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: transparent;
+  height: 50px;
+  border-radius: 18px;
+  border: 2px solid #a6a6a6;
+  transition: all 0.3s ease;
+}
+.input-container label.input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  color: #000;
+  font-size: 16px;
+  padding: 0 20px;
+}
+.input-container label.input span {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #767676;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  background-color: #fff;
+  padding: 0 5px;
+}
+.input-container label.input:focus-within, .input-container label.input.active {
+  border-color: #000;
+}
+.input-container label.input:focus-within span, .input-container label.input.active span {
+  color: #000;
+  font-size: 12px;
+  top: 0;
+}
+.input-container label.input.dark {
+  border-color: #383838;
+}
+.input-container label.input.dark input {
+  color: #fff;
+}
+.input-container label.input.dark span {
+  background-color: #232323;
+}
+.input-container label.input.dark:focus-within, .input-container label.input.dark.active {
+  border-color: #fff;
+}
+.input-container label.input.dark:focus-within span, .input-container label.input.dark.active span {
+  color: #fff;
+  font-size: 12px;
+  top: 0;
+}
+.input-container label.input.error {
+  border-color: #FF2828;
+}
+.input-container label.input.error span {
+  color: #FF2828;
+}
+.input-container label.input.error > p {
+  color: #FF2828;
+}
+.input-container p {
+  color: #000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 14px;
+  padding: 9px 0 0 5px;
+  font-weight: 300;
+}
+.input-container p.default {
+  color: #000;
+}
+.input-container p.success {
+  color: #4BC936;
+}
+.input-container p.primary {
+  color: #4B73FF;
+}
+.input-container p.secondary {
+  color: #C54BFF;
+}
+.input-container p.error {
+  color: #FF2828;
+}
+.input-container p.warning {
+  color: #FF7628;
+}
+.input-container p.dark {
+  color: #fff;
+}
+.input-container p.dark.default {
+  color: #fff;
 }/*# sourceMappingURL=styles.css.map */
