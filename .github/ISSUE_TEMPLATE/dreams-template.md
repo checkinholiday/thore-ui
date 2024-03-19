@@ -1,9 +1,9 @@
 ---
-name: Custom issue template
+name: Dreams template
 about: Describe this issue template's purpose here.
 title: ''
 labels: ''
-assignees: ''
+assignees: blackdevil92
 
 ---
 
